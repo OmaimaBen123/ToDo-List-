@@ -37,8 +37,8 @@ const ToDoList = () => {
                       <li key={index}>
                           <span className='text'> {task}</span>
                           <button onClick={() => deleteTask(index)} className='delete-btn'>Delete</button>
-                          <button onClick={() => moveTaskUp(index)} className='up-btn'>UP</button>
-                          <button onClick={()=>moveTaskDown(index)} className='down-btn'>Down</button>
+                          <button onClick={() => moveTaskUp(index)} className='move-btn'>UP</button>
+                          <button onClick={()=>moveTaskDown(index)} className='move-btn'>Down</button>
                       </li>
                   ))}
               </ol>
